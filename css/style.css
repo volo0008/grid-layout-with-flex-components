@@ -1,5 +1,5 @@
 *{
-  box-sizing: border-box;
+  box-sizing: border-box; /*applies to every box, includes paddings and borders*/
 }
 
 body {
@@ -23,7 +23,7 @@ body {
     align-items: center;
   }
   
-  h1 {
+  .siteheader h1 {
     margin-left: 16px;
     margin-bottom: 0.1rem;
   }
@@ -44,13 +44,13 @@ body {
   }
   
   .emoji p {
-    flex: 1;
+    flex: 1; /*let's this element to utilise all available space*/
     height: auto;
     margin-bottom: 1rem;
   }
 
   .icon {
-    order: -1;
+    order: -1; /*as html cannot be changed, then the order can be changed in CSS, starting from -1 the Icon can jump to the top*/
     font-size: 4rem;
     margin-bottom: 0.2rem;
   }
